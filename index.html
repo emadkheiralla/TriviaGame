@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="My Trivia Game">
+		<meta name="keywords" content="HTML,CSS, JQuery">
+		<meta name="author" content="Emad Kheiralla">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Trivia RPG</title>
+		<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Oswald' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" >
+	</head>
+	<body>
+		<div class="container" id="desk">
+			<div class="row">
+				<div class="col-md-7" id="questionaire">
+			  		<div id="questions">
+			  			<div class="currQuestion">
+			  				<h3>Welcome to Emad's Trivia Game</h3>
+			  				<br>
+			  				<input class="btn btn-primary btn-lg" type="submit" name="start" id="start" value="Start">
+			  			</div>
+			  			<div id="question1">
+			  				<p>Time Remaining: <span class="timer">10</span> seconds</p>
+				  			<p>The five cards that are placed in the middle of the table are known as what?</p>
+				  			<br>
+				  			<div class="answers" id="answers1">
+					  			<p>A.  Free cards</p>
+					  			<p>B.  The flop</p>
+					  			<p>C.  Dead cards</p>
+					  			<p>D.  Community cards</p>
+				  			</div>
+			  			</div>
+			  			<div id="question2">
+			  				<p>Time Remaining: <span class="timer">10</span> seconds</p>
+				  			<p>Forced bets to start play are called what?</p>
+				  			<br>
+				  			<div class="answers" id="answers2">
+					  			<p>A.  The antes</p>
+					  			<p>B.  The buy-in</p>
+					  			<p>C.  The blinds</p>
+					  			<p>D.  Under the gun</p>
+				  			</div>
+			  			</div>
+			  			<div id="question3">
+			  				<p>Time Remaining: <span class="timer">10</span> seconds</p>
+				  			<p>What is the last card flipped up in the middle of the table called?</p>
+				  			<br>
+				  			<div class="answers" id="answers3">
+					  			<p>A.  The river</p>
+					  			<p>B.  The turn</p>
+					  			<p>C.  3rd street</p>
+					  			<p>D.  The flop</p>
+				  			</div>
+			  			</div>
+			  			<div id="question4">
+			  				<p>Time Remaining: <span class="timer">10</span> seconds</p>
+				  			<p>What does the dealer do every time before flipping a card?</p>
+				  			<br>
+				  			<div class="answers" id="answers4">
+					  			<p>A.  Taps the deck</p>
+					  			<p>B.  Shuffles the cards</p>
+					  			<p>C.  Burns a card</p>
+					  			<p>D.  Calls the floor</p>
+				  			</div>
+			  			</div>
+			  			<div id="question5">
+			  				<p>Time Remaining: <span class="timer">10</span> seconds</p>
+				  			<p>What are the two hole cards nicknamed "The Hammer"?</p>
+				  			<br>
+				  			<div class="answers" id="answers5">
+					  			<p>A.  A-K</p>
+					  			<p>B.  2-7</p>
+					  			<p>C.  K-K</p>
+					  			<p>D.  2-8</p>
+				  			</div>
+			  			</div>
+			  			<div id="score">
+			  				<p>Thank you for participating in my trivia game!</p>
+				  			<p>Here's your score</p>
+				  			<br>
+				  			<p>Correct Answers: <span id="correct"></span> </p>
+				  			<p>Wrong Answers: <span id="wrong"></span></p>
+				  			<p>Your Score is: <span id="yourscore"></span></p>
+				  			<input class="btn btn-info btn-lg" type="submit" name="reset" id="reset" value="Play Again">
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<div class="col-md-5" id="scantron">
+			  		<br>
+			  		<form>
+						<div class="form-group">
+							<label class="control-label" for="name" id="labelname">Name</label>
+						    <input  type="text" class="form-control" id="name" placeholder="Enter your name here">
+						</div>
+						<div class="form-group">
+						    <label class="control-label" for="date" id="labeldate">Date</label>
+						    <input type="date" class="form-control" id="date">
+						</div>
+  					</form>
+			  		
+			  		<table>					  		
+				  		<tr>
+				  			<td>1.</td>
+					  		<td>
+						  		<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions1" id="question1a" value="A"> A
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions1" id="question1b" value="B"> B
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions1" id="question1c" value="C"> C
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions1" id="question1d" value="D"> D
+								</label>
+							</td>
+							<td>
+								<input class="btn btn-default btn-xs" type="submit" name="option1Submit" id="option1SubmitButton" value="Submit">
+							</td>
+						</tr>
+						<tr>
+							<td>2.</td>
+							<td>
+						  		<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions2" id="question1a" value="A"> A
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions2" id="question1b" value="B"> B
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions2" id="question1c" value="C"> C
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions2" id="question1d" value="D"> D
+								</label>
+							</td>
+							<td>
+								<input class="btn btn-default btn-xs" type="submit" name="option2Submit" id="option2SubmitButton" value="Submit">
+							</td>
+						</tr>
+
+						<tr>
+							<td>3.</td>
+					  		<td>
+						  		<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions3" id="question1a" value="A"> A
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions3" id="question1b" value="B"> B
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions3" id="question1c" value="C"> C
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions3" id="question1d" value="D"> D
+								</label>
+							</td>
+							<td>
+								<input class="btn btn-default btn-xs" type="submit" name="option3Submit" id="option3SubmitButton" value="Submit">
+							</td>
+						</tr>
+
+						<tr>
+							<td>4.</td>
+					  		<td>
+						  		<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions4" id="question1a" value="A"> A
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions4" id="question1b" value="B"> B
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions4" id="question1c" value="C"> C
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions4" id="question1d" value="D"> D
+								</label>
+							</td>
+							<td>
+								<input class="btn btn-default btn-xs" type="submit" name="option4Submit" id="option4SubmitButton" value="Submit">
+							</td>
+						</tr>
+
+						<tr>
+					  		<td>5.</td>
+					  		<td>
+						  		<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions5" id="question1a" value="A"> A
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions5" id="question1b" value="B"> B
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions5" id="question1c" value="C"> C
+								</label>
+							</td>
+							<td>
+								<label class="radio-inline">
+								  	<input type="radio" name="inlineRadioOptions5" id="question1d" value="D"> D
+								</label>
+							</td>
+							<td>
+								<input class="btn btn-default btn-xs" type="submit" name="option5Submit" id="option5SubmitButton" value="Submit">
+							</td>
+						</tr>
+					</table>
+					<img src="assets/images/barcode.png">
+			  	</div>
+			</div>
+		</div>
+		
+		
+		<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdn.rawgit.com/jwarby/jquery-awesome-cursor/master/dist/jquery.awesome-cursor.min.js"></script>
+		<script type ="text/javascript" src="assets/js/game.js"></script>
+	</body>
+</html>
