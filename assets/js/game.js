@@ -22,7 +22,12 @@ $(document).ready(function () {
 		question1();
 	});
 
+	$('#reset').on('click', function(){
+		window.location.reload();
+	});
+
 	function question1(){
+		$('p').show();
 		$('.currQuestion').replaceWith($( "#question1" ));
 		$('#question2').hide();
 		$('#question3').hide();
@@ -35,6 +40,7 @@ $(document).ready(function () {
 	};
 
 	function question2(){
+		$('p').show();
 		$('.currQuestion').replaceWith($( "#question2" ));
 		$('#question1').hide();
 		$('#question3').hide();
@@ -47,6 +53,7 @@ $(document).ready(function () {
 	};
 
 	function question3(){
+		$('p').show();
 		$('.currQuestion').replaceWith($( "#question3" ));
 		$('#question1').hide();
 		$('#question2').hide();
@@ -59,6 +66,7 @@ $(document).ready(function () {
 	};
 
 	function question4(){
+		$('p').show();
 		$('.currQuestion').replaceWith($( "#question4" ));
 		$('#question1').hide();
 		$('#question2').hide();
@@ -71,6 +79,7 @@ $(document).ready(function () {
 	};
 
 	function question5(){
+		$('p').show();
 		$('.currQuestion').replaceWith($( "#question5" ));
 		$('#question1').hide();
 		$('#question2').hide();
@@ -123,9 +132,12 @@ $(document).ready(function () {
     };
 
     function calculateScore(){
+    	$('p').show();
     	$('.currQuestion').replaceWith($( "#score" ));
     	$('#question5').hide();
     	$('#score').show();
+    	$('#playername').text($("#name").val());
+    	$('#gamedate').text($("#date").val());
     	$('#correct').text(numCorrect);
     	$('#wrong').text(numWrong);
     	$('#yourscore').text((numCorrect / 5)*100 + "%");
@@ -137,7 +149,8 @@ $(document).ready(function () {
 			numCorrect++;
 			stop();
 			$('#option1SubmitButton').prop("disabled",true);
-			$('#answers1').css('backgroundImage', 'url(../../assets/images/commcards.jpg)');
+			$('p').hide();
+			$('#answers1').css('backgroundImage', 'url(assets/images/commcards.jpg)');
 			setTimeout(question2, 2000);
 		}else{
 			numWrong++;
@@ -153,7 +166,8 @@ $(document).ready(function () {
 			numCorrect++;
 			stop();
 			$('#option2SubmitButton').prop("disabled",true);
-			$('#answers2').css('backgroundImage', 'url(../../assets/images/blinds.png)');
+			$('p').hide();
+			$('#answers2').css('backgroundImage', 'url(assets/images/blinds.png)');
 			setTimeout(question3, 2000);
 		}else{
 			numWrong++;
@@ -169,7 +183,8 @@ $(document).ready(function () {
 			numCorrect++;
 			stop();
 			$('#option3SubmitButton').prop("disabled",true);
-			$('#answers3').css('backgroundImage', 'url(../../assets/images/river.png)');
+			$('p').hide();
+			$('#answers3').css('backgroundImage', 'url(assets/images/river.png)');
 			setTimeout(question4, 2000);
 		}else{
 			numWrong++;
@@ -185,7 +200,8 @@ $(document).ready(function () {
 			numCorrect++;
 			stop();
 			$('#option4SubmitButton').prop("disabled",true);
-			$('#answers4').css('backgroundImage', 'url(../../assets/images/burncards.png)');
+			$('p').hide();
+			$('#answers4').css('backgroundImage', 'url(assets/images/burncards.png)');
 			setTimeout(question5, 2000);
 		}else{
 			numWrong++;
@@ -201,7 +217,8 @@ $(document).ready(function () {
 			numCorrect++;
 			stop();
 			$('#option5SubmitButton').prop("disabled",true);
-			$('#answers5').css('backgroundImage', 'url(../../assets/images/hammer.png)');
+			$('p').hide();
+			$('#answers5').css('backgroundImage', 'url(assets/images/hammer.png)');
 			setTimeout(calculateScore, 2000);
 		}else{
 			numWrong++;

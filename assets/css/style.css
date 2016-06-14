@@ -75,9 +75,12 @@ img{
 	padding: 0 20px 20px 20px;
 }
 
+.heading{
+	padding-top: 70px;
+}
+
 #questions{
-	padding: 70px 20px 20px 20px;
-	text-align: center;
+	padding: 40px 0px 20px 0px;
 	margin-top: 100px;
 	position: relative;
 	height: 390px;
@@ -87,7 +90,7 @@ img{
 .answers{
 	width: 250px;
 	height: 150px;
-	margin-left: 150px;
+	margin-left: 100px;
 	text-align: left;
 }
 
@@ -95,14 +98,48 @@ img{
 	padding-left: 10px;
 }
 
+.heading{
+	text-align: center;
+}
+
 #start{
-	margin: 0 auto;
+	margin-left: 40%;
 }
 
 h3{
 	color: #1a53ff;
+	font-family: 'Oswald', sans-serif;
+}
+
+h5{
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: larger;
+	padding: 0 100px 0 100px;
+	line-height: 200%;
 }
 
 p{
 	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+}
+
+#playername{
+	padding-left: 20px;
+	float: left;
+	text-decoration: underline;
+}
+
+#gamedate{
+	padding-right: 20px;
+	float: right;
+	text-decoration: underline;
+}
+
+.time{
+	text-align: center;
+}
+
+#score{
+	text-align: center;
 }
